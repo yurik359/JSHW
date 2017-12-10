@@ -7,20 +7,21 @@ console.log(name+' has '+event+' today at '+ time+ ' somewhere in '+place);
   
 
 
- var Euro;
+ var euro;
  do {
-   Euro = prompt("Please, enter your euro","1");
- } while (Euro.trim() === "" || isNaN(Euro)); 
+   euro = prompt("Please, enter your euro","1");
+ } while (euro.trim() === "" || isNaN(euro)); 
 
- var Dollar;
+ var dollar;
  do {
-   Dollar = prompt("Please, enter your dollar","1");
- } while (Dollar.trim() === "" || isNaN(Dollar)); 
+   dollar = prompt("Please, enter your dollar","1");
+ } while (dollar.trim() === "" || isNaN(dollar)); 
  
+var euroGrn= euro*29;
+var dollarGrn = dollar*27;
+var euro_dollars = 29/27;
 
 
-
-
-alert( Euro+ ' euros are equal ' +Euro*29+ ' grns, '+ Dollar+ ' dollars are equal '+ Dollar*27 +', one euro is equal'+Euro/Dollar +' dollars.');
+alert( euro+ ' euros are equal ' +euroGrn+ ' grns, '+ dollar+' dollars are equal '+ dollarGrn +' ,one euro is equal '+ euro_dollars +' dollars.');
 
  
