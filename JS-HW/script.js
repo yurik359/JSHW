@@ -22,6 +22,6 @@ var dollarGrn = dollar*27;
 var euro_dollars = 29/27;
 
 
-alert( euro+ ' euros are equal ' +euroGrn+ ' grns, '+ dollar+' dollars are equal '+ dollarGrn +' ,one euro is equal '+ euro_dollars +' dollars.');
+alert( euro+ ' euros are equal ' +euroGrn+ ' grns, '+ dollar+' dollars are equal '+ dollarGrn +' grn,one euro is equal '+ euro_dollars +' dollars.');
 
  
