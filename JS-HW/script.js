@@ -16,12 +16,13 @@ console.log(name+' has '+event+' today at '+ time+ ' somewhere in '+place);
  do {
    dollar = prompt("Please, enter your dollar","1");
  } while (dollar.trim() === "" || isNaN(dollar)); 
- 
-var euroGrn= euro*29;
-var dollarGrn = dollar*27;
-var euro_dollars = 29/27;
+ var kursEuro = 29;
+var kursDollar= 27;
+var euroGrn= euro*kursEuro;
+var dollarGrn = dollar*kursDollar;
+var euroDollars = kursEuro/kursDollar;
 
 
-alert( euro+ ' euros are equal ' +euroGrn+ ' grns, '+ dollar+' dollars are equal '+ dollarGrn +' grn,one euro is equal '+ euro_dollars +' dollars.');
+alert( euro+ ' euros are equal ' +euroGrn.toFixed(2)+ ' grns, '+ dollar+' dollars are equal '+ dollarGrn.toFixed(2) +' grn,one euro is equal '+ euroDollars.toFixed(2) +' dollars.');
 
  
